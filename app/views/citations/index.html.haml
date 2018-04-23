@@ -1,0 +1,8 @@
+%h1 List of citations:
+%ul
+  - @citations.each do |t|
+    %li
+      = t.citation_text
+%div.btn-toolbar
+  %div.btn-group-horizontal
+    %p= link_to('Add new citation', new_citation_path)

@@ -1,0 +1,9 @@
+%h1 Add new citation
+=form_for @citation do |t|
+  %div
+    = t.label :citation_text
+    = t.text_field :citation_text
+    = t.submit "Create"
+%div.btn-toolbar
+  %div.btn-group-horizontal
+    %p= link_to('Back', root_path)
